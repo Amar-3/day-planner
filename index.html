@@ -1,63 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24 Hour Grid</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-gap: 10px;
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: #4caf50;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 20px;
-            border-radius: 5px;
-        }
+      .timeblocks {
+        display: flex;
+        flex-direction: row;
+        background-color: #f4eded;
+        border-color: rgb(44, 43, 43);
+        background: rgb(154, 255, 2);
+        border: solid black 3px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+      }
+      .block {
+        background: rgb(245, 46, 86);
+
+        margin: 3px;
+        padding-left: 6px;
+        border: solid black 3px;
+        width: 300px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      .what2do {
+        margin: 0px;
+        display: flex;
+        background-color: rgb(145, 145, 249);
+        border: solid black 3px;
+        flex-wrap: wrap;
+        height: fit-content;
+        
+      }
+
+      .tasks {
+        background-color: tomato;
+        width: 300px;
+        height: fit-content;
+        overflow-y: scroll;
+        z-index: 30px;
+        margin: 3px;
+        border: solid;
+        border-radius: 2px;
+      }
+
+
+      button{
+        z-index: 4000000px;
+        margin-top: 6px;
+        background: hwb(57 0% 0%);
+        cursor: pointer;
+        border: solid 3px;
+        height: 30px;
+        width: 200px;
+        
+
+      }
+      button:hover{
+        background-color: rgba(229, 62, 24, 0);
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="box">00:00</div>
-        <div class="box">01:00</div>
-        <div class="box">02:00</div>
-        <div class="box">03:00</div>
-        <div class="box">04:00</div>
-        <div class="box">05:00</div>
-        <div class="box">06:00</div>
-        <div class="box">07:00</div>
-        <div class="box">08:00</div>
-        <div class="box">09:00</div>
-        <div class="box">10:00</div>
-        <div class="box">11:00</div>
-        <div class="box">12:00</div>
-        <div class="box">13:00</div>
-        <div class="box">14:00</div>
-        <div class="box">15:00</div>
-        <div class="box">16:00</div>
-        <div class="box">17:00</div>
-        <div class="box">18:00</div>
-        <div class="box">19:00</div>
-        <div class="box">20:00</div>
-        <div class="box">21:00</div>
-        <div class="box">22:00</div>
-        <div class="box">23:00</div>
+  </head>
+  <body>
+    <div class="what2do">
+      <div class="leetcode tasks">
+        <div class="easy">
+          <input type="checkbox" class="inputs" /> Easy<sup>math</sup>
+        </div>
+        <div class="medium">
+          <input type="checkbox" class="inputs" />
+          3Medium
+        </div>
+        <div class="hard"><input type="checkbox" class="inputs" /> 2 Hard</div>
+      </div>
+
+      <div class="codeforces tasks">
+        <input type="checkbox" class="inputs" />pastContest div2&div3
+      </div>
+
+      <div class="mern tasks">
+        <div class="express">
+          <input type="checkbox" class="inputs" />express
+        </div>
+        <div class="mongo"><input type="checkbox" class="inputs" />mongo</div>
+        <div class="node"><input type="checkbox" class="inputs" />node</div>
+        <div class="react"><input type="checkbox" class="inputs" />react</div>
+      </div>
+
+      <div class="project tasks">
+        <div class="socialmedia">
+          <input type="checkbox" class="inputs" />SocialMedia
+        </div>
+        <div class="ecommerce">
+          <input type="checkbox" class="inputs" />e-commerce
+        </div>
+        <div class="productivity">
+          <input type="checkbox" class="inputs" />Productivity
+        </div>
+      </div>
+
+      <div class="job tasks">
+        <input type="checkbox" class="inputs" />preffered job role applied to
+        targe companies.
+      </div>
+
+      <div class="personalcare tasks">
+        <input type="checkbox" class="inputs" />
+        hair
+
+        <br />
+        <input type="checkbox" class="inputs" />
+        skin <br />
+        <input type="checkbox" class="inputs" />
+        nails <br />
+        <input type="checkbox" class="inputs" />
+        face <br />
+      </div>
+
+      <div class="gymanistics tasks">
+        <input type="checkbox" class="inputs" />
+        30-pushups x 3 <br />
+        <input type="checkbox" class="inputs" />
+        abs-roller x 3 || 10 <br />
+        <input type="checkbox" class="inputs" />
+        10 pull-ups x 3 <br />
+        <input type="checkbox" class="inputs" />
+        plank leftside 2min <br />
+        <input type="checkbox" class="inputs" />
+        plank rightside 2min <br />
+        <input type="checkbox" class="inputs" />
+        flat plank 3min <br />
+        <input type="checkbox" class="inputs" />
+        stopping breath 3min <br />
+      </div>
+      
+
+      <div class="fooding tasks">
+        <input type="checkbox" class="inputs" />
+        carrots
+        <input type="checkbox" class="inputs" />cucumber
+      </div>
     </div>
-</body>
+
+
+
+    <div class="timeblocks">
+      <div class="block"><input type="checkbox" class="inputs" />0:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />1:00</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 2:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />3:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />4:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />5:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />6:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />7:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />8:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />09:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />10:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />11:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />12:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />13:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />14:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />15:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />16:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />17:00</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 18:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />19:00</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 20:00</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 21:00</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 22:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />23:00</div>
+    </div>
+
+    <button type="button" onclick="reset()">Reset for tommorow</button>
+  </body>
 </html>
