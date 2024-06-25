@@ -48,7 +48,9 @@
         border: solid;
         border-radius: 2px;
       }
-
+      .info{
+        background : rgb(155 , 254 , 2);
+        border: solid black 3px;
 
       button{
         z-index: 4000000px;
@@ -150,32 +152,42 @@
 
 
     <div class="timeblocks">
-      <div class="block"><input type="checkbox" class="inputs" />0:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />1:00</div>
-      <div class="block"><input type="checkbox" class="inputs" /> 2:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />3:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />4:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />5:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />6:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />7:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />8:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />09:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />10:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />11:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />12:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />13:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />14:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />15:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />16:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />17:00</div>
-      <div class="block"><input type="checkbox" class="inputs" /> 18:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />19:00</div>
-      <div class="block"><input type="checkbox" class="inputs" /> 20:00</div>
-      <div class="block"><input type="checkbox" class="inputs" /> 21:00</div>
-      <div class="block"><input type="checkbox" class="inputs" /> 22:00</div>
-      <div class="block"><input type="checkbox" class="inputs" />23:00</div>
+      <div class="block"><input type="checkbox" class="inputs" />0:00 imagining</div>
+      <div class="block"><input type="checkbox" class="inputs" />1:00 imagining</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 2:00 imaginig</div>
+      <div class="block"><input type="checkbox" class="inputs" />3:00 imaginaging</div>
+      <div class="block"><input type="checkbox" class="inputs" />4:00 imaginaing</div>
+      <div class="block"><input type="checkbox" class="inputs" />5:00 express</div>
+      <div class="block"><input type="checkbox" class="inputs" />6:00 refresh</div>
+      <div class="block"><input type="checkbox" class="inputs" />7:00 internship</div>
+      <div class="block"><input type="checkbox" class="inputs" />8:00 intrnship</div>
+      <div class="block"><input type="checkbox" class="inputs" />09:00 doing todays task</div>
+      <div class="block"><input type="checkbox" class="inputs" />10:00 exploration</div>
+      <div class="block"><input type="checkbox" class="inputs" />11:00 project</div>
+      <div class="block"><input type="checkbox" class="inputs" />12:00 project</div>
+      <div class="block"><input type="checkbox" class="inputs" />13:00 lunch</div>
+      <div class="block"><input type="checkbox" class="inputs" />14:00 empty block</div>
+      <div class="block"><input type="checkbox" class="inputs" />15:00 empty block</div>
+      <div class="block"><input type="checkbox" class="inputs" />16:00 leetcode</div>
+      <div class="block"><input type="checkbox" class="inputs" />17:00 cp </div>
+      <div class="block"><input type="checkbox" class="inputs" /> 18:00 leetcode</div>
+      <div class="block"><input type="checkbox" class="inputs" />19:00 internship</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 20:00 internship</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 21:00 dinner</div>
+      <div class="block"><input type="checkbox" class="inputs" /> 22:00 reading</div>
+      <div class="block"><input type="checkbox" class="inputs" />23:00 reading</div>
+    </div>
+    <div class="info" >
+    <p> in 10 min break i'll apply to jobs and internships across all the platform.</p>
     </div>
 
-    <button type="button" onclick="reset()">Reset for tommorow</button>
+    <button type="button" >Reset for tommorow</button>
   </body>
+  <script>
+    var bttn=document.getElementById('button');
+
+    bttn.addEventListner('click' , refresh());
+    function refresh() {
+      window.location.reload();
+  </script>
 </html>
